@@ -1,98 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Reign of Terror in Whitechapel</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Reign of Terror</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
 
-  <main class="page">
+		<!-- the four corners: these never move -->
+		<div class="corners">
+			<img class="photo top-left" src="images/eye-needle.jpg" alt="A needle pointed up toward an eye">
+			<img class="photo top-right" src="images/hand-pins.jpg" alt="A hand cupping a bundle of pins">
+			<img class="photo bottom-left" src="images/scissors.jpg" alt="A pair of old iron scissors">
+			<div class="needle bottom-right">I</div>
+		</div>
 
-    <!-- ROW 1 — pins + masthead -->
-    <div class="tally">
-      <img src="images/pins-tally.jpg" alt="Pins arranged like tally marks">
-    </div>
+		<!-- the skinny column: the only thing that scrolls -->
+		<div class="scroller">
+			<div class="main">
 
-    <header class="masthead">
-      <p class="paper">Evening News October</p>
-      <p class="paper">Evening News</p>
-      <div class="rule"></div>
-      <h1 class="headline">
-        <span class="dateline">London &nbsp; U.K. October</span>
-        <span>THE REIGN OF TERROR</span>
-        <span>IN WHITECHAPEL.</span>
-      </h1>
-      <div class="rule"></div>
-      <h2 class="subhead">AT THE SCENE OF THE CRIMES ON SUNDAY<br>SPECIAL</h2>
-    </header>
+				<div class="title">
+					<span class="word-1">REIGN</span>
+					<span class="word-2">OF</span>
+					<span class="word-3">TERROR</span>
+				</div>
 
-    <!-- ROW 2 — scissors + panic -->
-    <figure class="photo photo-scissors">
-      <img src="images/scissors.jpg" alt="Antique iron scissors">
-    </figure>
+				<div class="rule rule-top"></div>
 
-    <section class="story story-1">
-      <p>It would be impossible for any pen to do justice to a description of the excitement which prevailed in Whitechapel and its immediate neighbourhood all yesterday, from the time that the first news of these fresh horrors was bruited about until long after midnight. Terror and amazement were depicted in almost every face that one met in the streets of that now notorious district. I moved about the dense throngs which had grown to enormous proportions as the day wore on, and whose numbers seemed to culminate in the afternoon, when people came trooping in from distant parts athirst for the latest news bearing upon these awful tragedies. Trains, trams, and omnibuses disgorged their hundreds of passengers, who wended their way to the two localities which have, for the moment, put Buck's row and Hanbury street into the shade.</p>
-      <h3>A TERRIBLE PANIC</h3>
-      <div class="needle"><span>I</span></div>
-    </section>
+				<div class="subheads">
+					<div class="subhead">AT THE SCENE OF THE CRIMES<br>ON SUNDAY SPECIAL</div>
+					<div class="subhead">THE EVENING NEWS<br>LONDON OCTOBER FIRST</div>
+				</div>
 
-    <!-- ROW 3 — rotated headline + god help us -->
-    <div class="tilt tilt-1">
-      <p>THE REIGN OF TERROR</p>
-      <p>GOD HELP US</p>
-    </div>
+				<p class="deck">
+					TERROR AND AMAZEMENT WERE DEPICTED IN ALMOST EVERY FACE THAT ONE MET IN THE STREETS OF THAT NOW NOTORIOUS DISTRICT. A TERRIBLE PANIC HAS TAKEN POSSESSION OF THE ENTIRE DISTRICT.
+				</p>
 
-    <section class="story story-2">
-      <p>Has taken possession of the entire district, and its effects are to be seen in the wild, terrified faces of the women, and heard in the muttered imprecations of the men who have their homes in the densely populated streets of the East End. The very lads, ready at all times for ribald jest and noisy horse play, stood around in awe struck groups, whispering to each other of the fiendish things that were happening, just as one could have supposed the people stood and talked in Goodman's Fields, near by, more than two centuries ago when the Black Death claimed some of its first victims.</p>
-      <p>"God help us," exclaimed a poor creature, whose tawdry dress and hardened countenance indicated all too clearly the wretched calling she pursued. "If the human devil who murdered all these women isn't caught, and that pretty soon, too? Why, I might be next! It makes my blood run cold." She was standing, as she spoke, gazing down the alley leading into Mitre square, and from whence could be seen the corner where the policeman had stumbled upon the body of the murdered woman, and at her words other women drew their shawls closer around them with a shudder at the thought of the hideous vendetta which is being waged upon their sex and class.</p>
-      <h3>WHERE WERE THE POLICE</h3>
-      <div class="needle"><span>I</span></div>
-    </section>
+				<div class="rule"></div>
 
-    <!-- ROW 4 — hand with pins + police -->
-    <figure class="photo photo-hand">
-      <img src="images/hand-pins.jpg" alt="A hand holding a bundle of pins">
-    </figure>
+				<div class="body">
 
-    <section class="story story-3">
-      <p>That was the question that assailed one's ears on every hand. It seems incredible that, within the short space of twelve minutes, a man and woman should have entered the deserted precincts of Mitre square, that the man should have murdered his victim, and should have made his escape from the scene, without being seen at all. He must, when he hurried away after accomplishing his devilish purpose, have been reeking with blood. And yet the policeman on the beat is positive that he saw nothing of either the man or the woman within those twelve short minutes until he came upon the latter weltering in her blood.</p>
-      <h3>A FIENDISH CUNNING</h3>
-    </section>
+					<!-- the big quote: stays in place, turns grey when you hover the body -->
+					<div class="quote">IT MAKES MY<br>BLOOD<br>RUN COLD</div>
 
-    <!-- ROW 5 — cunning -->
-    <section class="story story-4">
-      <p>After having seen all that was to be seen in and around Mitre square, I came away more than ever impressed with the deliberate, inhuman cunning of the monster who is still abroad in our midst. Mitre square is quite out of the beaten track, is surrounded by warehouses and shops, and would be as deserted at midnight as though it lay in the centre of Salisbury Plain. No safer place, apparently, could possibly have been selected for the commission of such an awful crime, and the murderer, whoever he is, must have been familiar with that fact.</p>
-      <h3>THE CROWD IN BERNER STREET</h3>
-      <div class="needle"><span>I</span></div>
-    </section>
+					<div class="section">
+						<p>
+							It would be impossible for any pen to do justice to a description of the excitement which prevailed in Whitechapel and its immediate neighbourhood all yesterday from the time that the first news of these fresh horrors was bruited about until long after midnight. Trains trams and omnibuses disgorged their hundreds of passengers who wended their way to the two localities.
+						</p>
+						<p>
+							A terrible panic has taken possession of the entire district and its effects are to be seen in the wild terrified faces of the women. The very lads ready at all times for ribald jest stood around in awestruck groups whispering to each other of the fiendish things that were happening just as the people stood and talked in Goodmans Fields more than two centuries ago when the Black Death claimed some of its first victims.
+						</p>
+						<p>
+							God help us exclaimed a poor creature. If the human devil who murdered all these women is not caught and that pretty soon too why I might be next. It makes my blood run cold.
+						</p>
+						<p>
+							She was standing as she spoke gazing down the alley leading into Mitre Square and at her words other women drew their shawls closer around them with a shudder.
+						</p>
+					</div>
 
-    <!-- ROWS 5–6 — second rotated headline -->
-    <div class="tilt tilt-2">
-      <p>THE REIGN OF TERROR</p>
-      <p>TEN INCHES OF STEEL</p>
-    </div>
+					<div class="section">
+						<p>
+							Where were the police. That was the question that assailed the ear on every hand. It seems incredible that within the short space of twelve minutes a man and woman should have entered the deserted precincts of Mitre Square and that the man should have made his escape from the scene without being seen at all. And yet the policeman on the beat is positive that he saw nothing within those twelve short minutes.
+						</p>
+						<p>
+							Mitre Square is quite out of the beaten track and is surrounded by warehouses and shops and would be as deserted at midnight as though it lay in the centre of Salisbury Plain. It does not seem possible that accident could have led him to a spot so preeminently suited to his deadly purpose.
+						</p>
+					</div>
 
-    <!-- ROW 6 — Berner street -->
-    <section class="story story-5">
-      <p>I found the street literally packed with people of both sexes, all ages, and nearly all classes. Clubmen from the West end rubbed shoulders with the grimy denizens of St George's in the East: daintily dressed ladies, whom a wondering curiosity had drawn to the spot, elbowed their way amid knots of their less favoured sisters. Policemen were there in great numbers, jealously guarding the approach to the yard, reminding one irresistibly of the old adage about locking the stable door after the steed has been stolen.</p>
-      <p>"When do you expect you'll ketch the murderer, sonny?" "Ketch the murderer?" laughed another dilapidated onlooker. "Not till they puts a bobby to sit upon hevery doorstep in Vitechapel. And then alf on em will be asleep." These taunts show how utterly the poor creatures in that neighbourhood have lost confidence in police protection.</p>
-      <h3>A MAN WITH A BLACK BAG</h3>
-      <div class="needle"><span>I</span></div>
-    </section>
+					<div class="section">
+						<p>
+							Making the best of my way through the dense mass of people wedged in the narrow space of Duke Street Houndsditch I strolled along to Berner Street.
+						</p>
+						<p>
+							I found the street literally packed with people of both sexes all ages and nearly all classes. Clubmen from the West End rubbed shoulders with the grimy denizens of the East. Daintily dressed ladies whom a wondering curiosity had drawn to the spot elbowed their way amid knots of their less favoured sisters whose dirty and ragged apparel betokened the misery of their daily surroundings.
+						</p>
+						<p>
+							Policemen were there in great numbers jealously guarding the approach to the yard. It reminded one irresistibly of the old adage about locking the stable door after the steed has been stolen.
+						</p>
+						<p>
+							When do you expect you will ketch the murderer sonny. Ketch the murderer laughed another dilapidated onlooker. Not till they puts a bobby to sit upon hevery doorstep in Vitechapel. And then half of them will be asleep.
+						</p>
+						<p>
+							I shall never forget the aspect of that street yesterday afternoon. The intense excitement and the vast swaying throng of eager and for the most part terrified faces and the murmur of the hundreds of voices all made it utterly impossible for one to realize that it was the afternoon of a Christian sabbath.
+						</p>
+					</div>
 
-    <!-- ROW 7 — scissors with pins + black bag -->
-    <figure class="photo photo-pins">
-      <img src="images/scissors-pins.jpg" alt="Scissors laid among a row of pins">
-    </figure>
+					<div class="section">
+						<p>
+							In this yard almost against the International Club house the body of the first victim was found. She lay within three feet of the public street. Her feet were towards the gate and her head was in the gutter running down along the yard.
+						</p>
+						<p>
+							In her right hand were tightly clasped some grapes and in her left she held a number of sweetmeats. The linen was clean and in tolerably good repair.
+						</p>
+						<p>
+							She lies there on the stone with a smile on her pale face as if she had died without a struggle.
+						</p>
+					</div>
 
-    <section class="story story-6">
-      <p>"I only noticed one person passing, just before I turned in. That was a young man walking up Berner street, carrying a black bag in his hand." "Did you observe him closely, or notice anything in his appearance?" "No, I didn't pay particular attention to him. He was respectably dressed, but was a stranger to me." That was all that my informant had to tell me. I wonder will the detectives think it worth while to satisfy themselves about that black bag?</p>
-    </section>
+					<div class="section">
+						<p>
+							Having been disturbed in his first attempt the murderer seems to have made his way towards the City and to have met another unfortunate whom he induced to go with him to Mitre Square. A secluded spot lying off Aldgate and principally occupied by warehouses.
+						</p>
+						<p>
+							He must have been extremely quick at his work for every portion of the police beat in which Mitre Square is included is patrolled every ten minutes or quarter of an hour. Police Constable Watkins passed through the square at about half past one and is quite certain that it was then in its normal condition. Within a quarter of an hour he patrolled it again and then found a woman lying in the corner.
+						</p>
+						<p>
+							There exists somewhere in the East End at this moment a fiend in human shape.
+						</p>
+					</div>
 
-  </main>
+					<div class="section">
+						<p>
+							He was hugging her and kissing her and as he seemed a respectably dressed man we were rather astonished at the way he was going on with the woman who was poorly dressed. As he stood in the doorway he always threw sidelong glances into the bar but would look nobody in the face.
+						</p>
+						<p>
+							The man was about five feet five inches in height. He was well dressed in a black morning suit with a morning coat. He had rather weak eyes. He had a thick black moustache and no beard. He wore a black billycock hat rather tall. I should know the man again amongst a hundred.
+						</p>
+					</div>
 
-</body>
+					<div class="section">
+						<p>
+							I was just about going to bed sir when I heard a call for the police. I ran to the door and before I could open it I heard somebody say come out quick there is a poor woman here that has had ten inches of cold steel in her.
+						</p>
+						<p>
+							Then I see a sight that turned me all sick and cold. There was the murdered woman a lying on her side. Her legs was drawn up under her. She was dressed in black as if she was in mourning for somebody.
+						</p>
+						<p>
+							Mr Lewis who travels in cheap drapery things a bit now and again had just drove into the yard when his horse shied at something that was lying in the corner. He thought it was a bundle of some kind till he got down from his cart and struck a light. Then he saw what it was and gave the alarm.
+						</p>
+						<p>
+							There was hardly anybody moving about except at the club. There was music and dancing going on there at the very time that that poor creature was being murdered at their very door as one may say.
+						</p>
+						<p>
+							I only noticed one person passing just before I turned in. That was a young man walking up Berner Street carrying a black bag in his hand.
+						</p>
+						<p>
+							That was all that my informant had to tell me. I wonder will the detectives think it worth while to satisfy themselves about that black bag.
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
 </html>
