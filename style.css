@@ -61,7 +61,7 @@ body {
 	align-self: end;
 }
 
-/* the capital I is the needle */
+
 .needle {
 	grid-area: br;
 	align-self: end;
@@ -72,10 +72,8 @@ body {
 	margin-bottom: -2.2vw;
 }
 
-/* ---------- the scrolling layer ---------- */
 
-/* sits on top of the whole screen; only this scrolls,
-   so the corners stay put */
+
 .scroller {
 	position: absolute;
 	top: 0;
@@ -85,7 +83,7 @@ body {
 	overflow-y: scroll;
 }
 
-/* the skinny column (flexbox) */
+
 .main {
 	width: 31.8vw;
 	margin: 0 auto;
@@ -94,7 +92,7 @@ body {
 	flex-direction: column;
 }
 
-/* ---------- title (the only animation) ---------- */
+
 
 .title {
 	display: flex;
@@ -103,7 +101,7 @@ body {
 	line-height: 1em;
 }
 
-/* each word bristles at its own pace */
+
 .title span {
 	font-variation-settings: "ALTR" 100;
 	animation-name: bristle;
@@ -136,7 +134,7 @@ body {
 	}
 }
 
-/* ---------- double rules ---------- */
+
 
 .rule {
 	height: 0.3vw;
@@ -148,9 +146,9 @@ body {
 	margin-top: 1.3vw;
 }
 
-/* ---------- subheads ---------- */
 
-/* sized so the two blocks run from the start of the rule to the end */
+
+
 .subheads {
 	display: flex;
 	justify-content: space-between;
@@ -158,14 +156,13 @@ body {
 }
 
 .subhead {
-	font-size: 1.13vw;
+	font-size: 1.15vw;
 	line-height: 1.3em;
 	font-variation-settings: "ALTR" 100;
 }
 
-/* ---------- deck ---------- */
 
-/* same size as the body text, all caps, needles out */
+
 .deck {
 	margin: 4.2vw 0 1.1vw 0;
 	text-align: center;
@@ -174,9 +171,7 @@ body {
 	font-variation-settings: "ALTR" 100;
 }
 
-/* ---------- body text ---------- */
 
-/* skinny justified column; the roomy line spacing keeps it readable */
 .body {
 	align-self: center;
 	width: 12vw;
@@ -189,7 +184,7 @@ body {
 	color: #1a1a1a;
 }
 
-/* position: relative keeps the body text on top of the big quote */
+
 .section {
 	position: relative;
 	display: flex;
@@ -203,10 +198,7 @@ body {
   color: #ff0000;
 }
 
-/* ---------- the big quote ---------- */
 
-/* stays in place over the page; pointer-events: none lets
-   the mouse pass through it to the body text */
 .quote {
 	position: fixed;
 	top: 43vh;
@@ -218,7 +210,7 @@ body {
 	pointer-events: none;
 	transition: 0.6s;
 
-	/* constant needle animation, 0 to 100 and back */
+	
 	animation-name: quote-needles;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
@@ -235,37 +227,39 @@ body {
 	}
 }
 
-/* ---------- hover the body text ---------- */
 
 /* the quote fades to grey so the body can be read */
 .body:hover .quote {
 	color: #dddddd;
 }
 
-/* the body switches to all caps with the needles out */
+
 .body:hover p {
 	text-transform: uppercase;
 	font-variation-settings: "ALTR" 100;
 }
 
-/* ---------- smaller screens (media query) ---------- */
+
 
 @media (max-width: 700px) {
 	.corners {
 		grid-template-columns: 17vw 1fr 17vw;
 		padding: 16px 12px;
+		background-color: rgb(255, 0, 0);
 	}
 	.photo {
-		border: 2px solid black;
+		border: 2px solid rgb(255, 0, 0);
 	}
 	.needle {
 		font-size: 24vw;
 		margin-right: -2.4vw;
 		margin-bottom: -2vw;
+		color: #dddddd;
 	}
 	.main {
 		width: 54vw;
 		padding: 16px 0 120px 0;
+		background-color: rgb(255, 0, 0);
 	}
 	.title {
 		font-size: 7vw;
@@ -287,11 +281,13 @@ body {
 	.deck {
 		font-size: 13px;
 		margin: 28px 0 16px 0;
+		background-color: rgb(255, 4, 4);
 	}
 	.body {
 		width: 100%;
 		font-size: 13px;
 		margin-top: 20px;
-    color: #ff0000;
+    color: #000000;
+	background-color: rgb(255, 0, 0);
 	}
 }
