@@ -230,7 +230,7 @@ body {
 
 /* the quote fades to grey so the body can be read */
 .body:hover .quote {
-	color: #dddddd;
+	color: #cac8c8;
 }
 
 
